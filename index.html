@@ -1,18 +1,100 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Commento prova commit -->
     <link rel="stylesheet" href="./css/style.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/aa1661fd5d.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <header></header>
-    <div id="app">
-        <aside></aside>
+    <header class="d-flex align-items-center"> <!--header-->
+        <div class="container-fluid">
+            <div class="row__header row flex-nowrap align-items-center"> <!--logo-->
+                <div class="logo col-2">
+                    <img class="logo__mobile d-lg-none" src="./img/mobile-logo.png" alt="">
+                    <img class=" logo__desktop d-none d-lg-block" src="./img/logo.svg" alt="">
+                </div>
+                <div class="input__header col-8 d-flex flex-grow-1"> <!--searchbar-->
+                    <i class="fa-solid fa-magnifying-glass align-self-center p-1"></i>
+                    <input type="search" placeholder="Prova a ceracre lezioni e Laravel">
+                </div>
+                <ul class="list-inline d-flex m-0 w-auto ms-auto fs-5"> <!--lista icone header-->
+                    <li class="list-inline-item d-none d-lg-flex">
+                        <i class="fa-solid fa-list-ul"></i>
+                    </li>
+                    <li class="list-inline-item d-none d-lg-flex" >
+                        <i class="fa-solid fa-list-ul"></i>
+                    </li>
+                    <li class="list-inline-item d-none d-lg-flex">
+                        <i class="fa-solid fa-list-ul"></i>
+                    </li>
+                    <li class="list-inline-item d-flex text-warning">  <!--icona sempre arancione-->
+                        <i class="fa-solid fa-list-ul"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div id="app" class="d-flex">
+        <aside class="d-flex justify-content-center justify-content-lg-start py-5"> <!--sidebar laterale-->
+            <ul class="list-inline d-flex flex-column gap-2 px-3 m-0"> <!--menu a lista-->
+                <li class="list-inline-item">
+                    <i class="fa-solid fa-house"></i>
+                    <span class="d-none d-lg-inline">Home</span>
+                </li>
+                <li class="list-inline-item">
+                    <i class="fa-solid fa-house"></i>
+                    <span class="d-none d-lg-inline">Home</span>
+                </li>
+                <li class="list-inline-item">
+                    <i class="fa-solid fa-house"></i>
+                    <span class="d-none d-lg-inline">Home</span>
+                </li>
+                <li class="list-inline-item mt-auto"> <!--elemento lista margin-top: auto-->
+                    <i class="fa-solid fa-house"></i>
+                    <span class="d-none d-lg-inline">Home</span>
+                </li>
+            </ul>
+        </aside>
         <main>
-            <section></section>
+            <section class="main__bar py-4">
+                <div class="container-fluid">
+                    <div class="row flex-column gap-3 flex-md-row justify-content-lg-between">
+                        <div class="col text-white order-md-2">
+                            <div>
+                                <span class="fs-7">Nuovo studente</span>
+                                <button>+</button>
+                            </div>
+                        </div>
+                        <div class="col d-flex text-white">
+                            <div>
+                                <div class="d-flex align-items-center gap-1">
+                                    <h2>Boolean</h2>
+                                    <span class="badge rounded-pill text-bg-dark">Piano Blaze</span>
+                                </div>
+                                <div class="d-flex gap-1">
+                                    <span class="badge rounded-pill text-bg-dark">3 app</span>
+                                    <i class="fa-solid fa-angles-right"></i>
+                                    <span class="badge rounded-pill text-bg-dark d-lg-none">+</span>
+                                    <span class="badge rounded-pill text-bg-dark d-none d-lg-flex">Boolean mobile app</span>
+                                    <span class="badge rounded-pill text-bg-dark d-none d-lg-flex">Boolean web app</span>
+                                    <span class="badge rounded-pill text-bg-dark d-none d-lg-flex">Boolean browser app</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col text-white">
+                            <div>
+                                Studenti online negli ultimi 30 minuti
+                            </div>
+                            <span class="fs-4">130</span>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
             <section></section>
         </main>
     </div>
