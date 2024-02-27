@@ -21,18 +21,18 @@
                     <i class="fa-solid fa-magnifying-glass align-self-center p-1"></i>
                     <input type="search" placeholder="Prova a ceracre lezioni e Laravel">
                 </div>
-                <ul class="list-inline d-flex m-0 w-auto gap-2 ms-auto fs-5"> <!--lista icone header-->
+                <ul class="list-inline d-flex align-items-center m-0 w-auto gap-2 ms-auto fs-5"> <!--lista icone header-->
                     <li class="list-inline-item d-none d-lg-flex">
                         <i class="fa-solid fa-list-ul"></i>
                     </li>
                     <li class="list-inline-item d-none d-lg-flex" >
-                        <i class="fa-solid fa-list-ul"></i>
+                        <i class="fa-solid fa-circle-question"></i>
                     </li>
                     <li class="list-inline-item d-none d-lg-flex">
-                        <i class="fa-solid fa-list-ul"></i>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
                     </li>
-                    <li class="list-inline-item d-flex text-warning">  <!--icona sempre arancione-->
-                        <i class="fa-solid fa-list-ul"></i>
+                    <li class="icon__menu list-inline-item d-flex text-warning">  <!--icona sempre arancione-->
+                        <i class="fa-solid fa-bell"></i>
                     </li>
                 </ul>
             </div>
@@ -41,21 +41,21 @@
     <div id="app" class="d-flex">
         <aside class="d-flex justify-content-center justify-content-lg-start py-5"> <!--sidebar laterale-->
             <ul class="list-inline d-flex flex-column gap-2 px-3 m-0"> <!--menu a lista-->
-                <li class="list-inline-item">
+                <li class="bg__hover list-inline-item p-2">
                     <i class="fa-solid fa-house"></i>
                     <span class="d-none d-lg-inline">Home</span>
                 </li>
-                <li class="list-inline-item">
-                    <i class="fa-solid fa-house"></i>
-                    <span class="d-none d-lg-inline">Home</span>
+                <li class="bg__hover list-inline-item p-2">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <span class="d-none d-lg-inline">Stats</span>
                 </li>
-                <li class="list-inline-item">
-                    <i class="fa-solid fa-house"></i>
-                    <span class="d-none d-lg-inline">Home</span>
+                <li class="bg__hover list-inline-item p-2">
+                    <i class="fa-solid fa-signal"></i>
+                    <span class="d-none d-lg-inline">Signal</span>
                 </li>
-                <li class="list-inline-item mt-auto"> <!--elemento lista margin-top: auto-->
-                    <i class="fa-solid fa-house"></i>
-                    <span class="d-none d-lg-inline">Home</span>
+                <li class="bg__hover list-inline-item mt-auto p-2"> <!--elemento lista margin-top: auto-->
+                    <i class="fa-solid fa-gear"></i>
+                    <span class="d-none d-lg-inline">Admin</span>
                 </li>
             </ul>
         </aside>
@@ -294,15 +294,15 @@
                                     <ul class="list-group">
                                         <li class="list-group-item">
                                           <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
-                                          <label class="form-check-label" for="firstCheckbox">First checkbox</label>
+                                          <label class="form-check-label" for="firstCheckbox">Nuove classi</label>
                                         </li>
                                         <li class="list-group-item">
                                           <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
-                                          <label class="form-check-label" for="secondCheckbox">Second checkbox</label>
+                                          <label class="form-check-label" for="secondCheckbox">Classi già avviate: primo mese</label>
                                         </li>
                                         <li class="list-group-item">
                                           <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
-                                          <label class="form-check-label" for="thirdCheckbox">Third checkbox</label>
+                                          <label class="form-check-label" for="thirdCheckbox">Classi già avviate > 3 mesi</label>
                                         </li>
                                       </ul>
                                 </div>
