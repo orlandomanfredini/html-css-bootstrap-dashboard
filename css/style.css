@@ -62,7 +62,7 @@ aside{
     background-color: rgb(199, 193, 193);
     color: rgb(83, 81, 81);
     border-radius: 5px;
-    
+
 }
 
 
@@ -79,7 +79,7 @@ aside{
     }
 }
 
-/* SECTION MAIN__BAR */
+/* SECTION MAIN__BAR azzurra */
 main{
     width: 100%;
     height: calc(100vh - 50px);
@@ -114,6 +114,35 @@ main{
      border: 1px solid  rgb(135, 132, 132);
      border-radius: 5px;
 }
+
+/* OFFCANVAS */
+
+.body-offcanvas.offcanvas.offcanvas-end{
+    width: 100%;
+}
+
+
+
+@media (min-width:768px){
+    .body-offcanvas.offcanvas.offcanvas-end{
+        width: 100%;
+    }
+}
+
+@media (min-width:992px){
+    .body-offcanvas.offcanvas.offcanvas-end{
+        width: 600px;
+    }
+}
+
+.select-height{
+    height: 30px;
+    
+}
+
+
+
+
 
 
 

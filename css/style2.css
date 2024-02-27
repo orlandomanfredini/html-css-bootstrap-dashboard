@@ -15,26 +15,27 @@
      border-radius: 5px;
 }
 
-
-
-.body__offcanvas{
+.body-offcanvas.offcanvas.offcanvas-end{
     width: 100%;
-    padding: 2px;
-    overflow-x: hidden;
 }
 
+
+
 @media (min-width:768px){
-    .body__offcanvas{
-        
+    .body-offcanvas.offcanvas.offcanvas-end{
         width: 100%;
     }
 }
 
 @media (min-width:992px){
-    .body__offcanvas{
-        
-         width: 600px;
-    } 
+    .body-offcanvas.offcanvas.offcanvas-end{
+        width: 600px;
+    }
+}
+
+.select-height{
+    height: 30px;
+    
 }
 
 
