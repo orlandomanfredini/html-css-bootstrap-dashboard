@@ -31,8 +31,15 @@
                     <li class="list-inline-item d-none d-lg-flex">
                         <i class="fa-solid fa-ellipsis-vertical"></i>
                     </li>
-                    <li class="icon__menu list-inline-item d-flex text-warning">  <!--icona sempre arancione-->
-                        <i class="fa-solid fa-bell"></i>
+                    <li class="icon__menu list-inline-item text-warning dropdown">  <!--icona sempre arancione-->
+                        <span type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-bell"></i>
+                        </span>
+                        <ul class="dropdown-menu fs-7">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          </ul>
                     </li>
                 </ul>
             </div>
@@ -60,10 +67,10 @@
             </ul>
         </aside>
         <main>
-            <section class="main__bar py-4">
+            <section class="main__bar py-4"> <!--toolbar blue-->
                 <div class="container-fluid">
                     <div class="row flex-column gap-3 flex-md-row justify-content-lg-between">
-                        <div class="col text-white order-md-2">
+                        <div class="col d-flex justify-content-end text-white order-md-2">
                             <div>
                                 <span class="fs-7">Nuovo studente</span>
                                 <button>+</button>
@@ -81,7 +88,7 @@
                                     <span class="badge rounded-pill text-bg-dark d-lg-none">+</span>
                                     <span class="badge rounded-pill text-bg-dark d-none d-lg-flex">Boolean mobile app</span>
                                     <span class="badge rounded-pill text-bg-dark d-none d-lg-flex">Boolean web app</span>
-                                    <span class="badge rounded-pill text-bg-dark d-none d-lg-flex">Boolean browser app</span>
+                                    <span class="badge rounded-pill text-bg-dark d-none d-lg-flex">Boolean browser</span>
                                 </div>
                             </div>
                         </div>
