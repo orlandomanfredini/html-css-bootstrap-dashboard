@@ -29,6 +29,7 @@ header{
     padding: 5px;
     background-color:transparent;
     border: none;
+    outline: none;
 
 }
 
@@ -45,8 +46,11 @@ aside{
     width: 80px;
     height: calc(100vh - 50px);
     color: white;
-    background: rgb(47,46,164);
-    background: linear-gradient(222deg, rgba(47,46,164,1) 28%, rgba(64,63,135,1) 28%, rgba(51,48,115,1) 28%, rgba(35,36,115,1) 28%, rgba(27,225,18,1) 28%, rgba(18,28,75,1) 28%, rgba(30,42,106,1) 28%, rgba(45,51,130,1) 28%);
+    background-color: rgb(5, 5, 49);
+    background-image: url(../img/sidebar-bg.png);
+    background-position: center;
+    background-size: cover;
+    
 }
 
 
@@ -58,7 +62,7 @@ aside{
 /* media query aside */
 @media (min-width:992px){
     aside{
-        width: 180px;
+        width: 150px;
         justify-content: flex-start;
     }
 }
@@ -66,6 +70,9 @@ aside{
 /* SECTION MAIN__BAR */
 main{
     width: 100%;
+    height: calc(100vh - 50px);
+    overflow: auto;
+    
 }
 
 .main__bar{
@@ -78,3 +85,23 @@ main{
     color: white;
     border-radius: 8px;
 }
+
+/* FIRST CARD. prime classi */
+
+.font__row{
+    font-size: 13px;
+}
+
+.th__large{
+    width: 250px;
+}
+
+.edit__icon i{
+     color: rgb(135, 132, 132);
+     padding: 2px;
+     border: 1px solid  rgb(135, 132, 132);
+     border-radius: 5px;
+}
+
+
+
